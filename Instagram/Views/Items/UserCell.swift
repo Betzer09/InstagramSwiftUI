@@ -11,6 +11,7 @@ struct UserCell: View {
     var body: some View {
         HStack {
             Image("ironman3")
+                .resizable()
                 .frame(width: 48, height: 48)
                 .scaledToFill()
                 .clipShape(Circle())
