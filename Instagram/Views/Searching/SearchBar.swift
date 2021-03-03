@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchBar: View {
-    
+    @Binding var isEditing: Bool
     @Binding var text: String
     
     var body: some View {
@@ -26,6 +26,24 @@ struct SearchBar: View {
                             .padding(.leading, 8)
                     }
                 )
+                .onTapGesture {
+                    isEditing = true
+                }
+            
+            
+            if isEditing {
+                Button(action: {
+                    isEditing = false
+                    text = ""
+                    UIApplication.shared.endEditing()
+                }, label: {
+                    Text("Cancel")
+                        .foregroundColor(.black)
+                })
+                .padding(.trailing, 8)
+                .transition(.move(edge: .trailing))
+                .animation(.default)
+            }
             
             
         }
@@ -34,7 +52,7 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(text: .constant("Search"))
+        SearchBar(isEditing: .constant(true), text: .constant("Search"))
             .previewLayout(.sizeThatFits)
     }
 }
