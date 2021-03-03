@@ -18,6 +18,7 @@
 		236C16C825EED85B00ECA2FB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C16C725EED85B00ECA2FB /* ProfileView.swift */; };
 		236C16CB25EED86200ECA2FB /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C16CA25EED86200ECA2FB /* UploadPostView.swift */; };
 		236C16CF25EEDC1600ECA2FB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C16CE25EEDC1600ECA2FB /* FeedCell.swift */; };
+		23F6BFCC25F01684004FCCB6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6BFCB25F01684004FCCB6 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		236C16C725EED85B00ECA2FB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		236C16CA25EED86200ECA2FB /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		236C16CE25EEDC1600ECA2FB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		23F6BFCB25F01684004FCCB6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				236C16C125EED84300ECA2FB /* SearchView.swift */,
+				23F6BFCB25F01684004FCCB6 /* SearchBar.swift */,
 			);
 			path = Searching;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				236C16BB25EED7FA00ECA2FB /* MainTabView.swift in Sources */,
 				236C16CB25EED86200ECA2FB /* UploadPostView.swift in Sources */,
 				236C16C825EED85B00ECA2FB /* ProfileView.swift in Sources */,
+				23F6BFCC25F01684004FCCB6 /* SearchBar.swift in Sources */,
 				236C16C525EED85200ECA2FB /* NotificationsView.swift in Sources */,
 				236C16CF25EEDC1600ECA2FB /* FeedCell.swift in Sources */,
 			);
