@@ -22,7 +22,7 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .font(.system(size: 35))
                     
-                    VStack(spacing: 20) {
+                    VStack(spacing: 10) {
                         CustomTextField(text: $email, placeHolder: Text("Email"), imgName: "envelope")
                             .padding()
                             .background(Color(.init(white: 1, alpha: 0.15)))
@@ -44,7 +44,6 @@ struct LoginView: View {
                                 Text("Forgot password")
                                     .font(.system(size: 13, weight: .semibold))
                                     .foregroundColor(.white)
-                                    .padding(.top)
                                     .padding(.trailing, 28)
                             })
                         }
@@ -56,23 +55,26 @@ struct LoginView: View {
                                 .frame(width: 320, height: 50)
                                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                 .clipShape(Capsule())
-                                .padding()
+                                .padding(.top, 4)
                         })
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                            HStack {
-                                Text("Don't have an account?")
-                                    .font(.system(size: 14))
-                                
-                                Text("Sign Up")
-                                    .font(.system(size: 14, weight: .semibold))
-                            }.foregroundColor(.white)
-                        }).padding(.bottom, 32)
+                        NavigationLink(
+                            destination: RegistrationView().navigationBarHidden(true),
+                            label: {
+                                HStack {
+                                    Text("Don't have an account?")
+                                        .font(.system(size: 14))
+                                    
+                                    Text("Sign Up")
+                                        .font(.system(size: 14, weight: .semibold))
+                                }.foregroundColor(.white)
+                            })
                         
                     }
                 }
+                .padding(.top, -44)
             }
         }
         
