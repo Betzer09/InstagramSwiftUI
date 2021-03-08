@@ -11,25 +11,32 @@ struct UploadPostView: View {
     @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @State var captionText: String = ""
+    @State var imagePickerPresented = false
+    
+    
     var body: some View {
         VStack {
-            if postImage != nil {
+            if postImage == nil {
                 VStack {
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: { imagePickerPresented.toggle() }, label: {
                         Image(systemName: "plus.circle")
                             .resizable()
                             .frame(width: 80, height: 80)
                             .foregroundColor(.black)
                             .padding(.top, 40)
+                    }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                        ImagePicker(image: $selectedImage)
                     })
                     
                     Text("Photo")
                 }
-            } else {
-                HStack {
-                    Image("venom3")
+            } else if let image = postImage {
+                HStack(alignment: .top) {
+                    image
                         .resizable()
+                        .scaledToFill()
                         .frame(width: 96, height: 96)
+                        .clipped()
                     
                     TextField("Enter your caption", text: $captionText)
                 }.padding()
@@ -44,10 +51,18 @@ struct UploadPostView: View {
                         .foregroundColor(.white)
                 })
                 .padding()
+                
             }
             
             Spacer()
         }
+    }
+}
+
+extension UploadPostView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else {return}
+        postImage = Image(uiImage: selectedImage)
     }
 }
 

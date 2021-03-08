@@ -22,6 +22,7 @@
 		2388D6E625F049F600C5F67E /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388D6E525F049F600C5F67E /* ProfileHeaderView.swift */; };
 		2388D6EA25F0511100C5F67E /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388D6E925F0511100C5F67E /* UserStatsView.swift */; };
 		2388D6ED25F0535100C5F67E /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388D6EC25F0535100C5F67E /* ProfileActionButtonView.swift */; };
+		23F3E66025F2E86700300215 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3E65F25F2E86700300215 /* ImagePicker.swift */; };
 		23F6BFCC25F01684004FCCB6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6BFCB25F01684004FCCB6 /* SearchBar.swift */; };
 		23F6BFCF25F01833004FCCB6 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6BFCE25F01833004FCCB6 /* PostGridView.swift */; };
 		23F6BFD225F019AA004FCCB6 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6BFD125F019AA004FCCB6 /* UserListView.swift */; };
@@ -47,6 +48,7 @@
 		2388D6E525F049F600C5F67E /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		2388D6E925F0511100C5F67E /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		2388D6EC25F0535100C5F67E /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		23F3E65F25F2E86700300215 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		23F6BFCB25F01684004FCCB6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		23F6BFCE25F01833004FCCB6 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		23F6BFD125F019AA004FCCB6 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				23F6BFD725F01FA6004FCCB6 /* Extensions+UIApplication.swift */,
+				23F3E65F25F2E86700300215 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				23F6BFCF25F01833004FCCB6 /* PostGridView.swift in Sources */,
 				236C16AB25EED72000ECA2FB /* ContentView.swift in Sources */,
 				236C169425EDEB0200ECA2FB /* InstagramApp.swift in Sources */,
+				23F3E66025F2E86700300215 /* ImagePicker.swift in Sources */,
 				236C16BB25EED7FA00ECA2FB /* MainTabView.swift in Sources */,
 				236C16CB25EED86200ECA2FB /* UploadPostView.swift in Sources */,
 				2388D6E625F049F600C5F67E /* ProfileHeaderView.swift in Sources */,
